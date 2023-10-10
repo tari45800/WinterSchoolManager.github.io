@@ -2,13 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore/lite";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB9vreTJDX_ZXnTltFkN4QDc5FH0pTQA0k",
-  authDomain: "winterschool-bbe1a.firebaseapp.com",
-  projectId: "winterschool-bbe1a",
-  storageBucket: "winterschool-bbe1a.appspot.com",
-  messagingSenderId: "674743780628",
-  appId: "1:674743780628:web:2b6ed23f9b729166f2ee01",
-  measurementId: "G-FRD76X0ZML",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
